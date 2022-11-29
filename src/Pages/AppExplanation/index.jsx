@@ -1,5 +1,6 @@
 import { View, StyleSheet, ScrollView, Text } from "react-native"
 import DefaultButton from "../../components/Common/DefaultButton"
+import ExplanationCard from "../../components/Common/Explanation/ExplanationCard"
 
 export default function AppExplanation ( )
 {
@@ -11,9 +12,10 @@ export default function AppExplanation ( )
         <View style={styles.container}>
             <ScrollView>
                 <View style={{alignItems: "center"}}>
-                    <Text styles={styles.title}>
+                    <Text style={styles.title}>
                         Antes, deixa {"\n"} eu te explicar...
                     </Text>
+                    <ExplanationCard />
                     <Text style={styles.descriptionCta}>
                         Pronto(a) para subir de nível na vida?
                     </Text>
